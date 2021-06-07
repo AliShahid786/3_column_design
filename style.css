@@ -1,0 +1,116 @@
+:root {
+    /* Primary */
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* Neutral */
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%)
+}
+
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--very-light-gray);
+    padding: 60px 20px;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    min-width: 335px;
+}
+
+.sedans {
+    background-color: var(--bright-orange);
+}
+.suvs {
+    background-color: var(--dark-cyan);
+}
+.luxury {
+    background-color: var(--very-dark-cyan);
+}
+
+.txt-style {
+    padding: 50px;
+    color: var(--transparent-white);
+    line-height: 25px;
+}
+.car-icon {
+    margin-bottom: 30px;
+}
+
+.header-style {
+    font-family: 'Big Shoulders Display', cursive;;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+p {
+    margin-bottom: 40px;
+}
+.a-style {
+    background-color: var(--very-light-gray);
+    padding: 15px 30px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 400;
+}
+.a-style:hover {
+    cursor: pointer;
+    background-color: inherit;
+    border: 3px solid var(--very-light-gray);
+    color: var(--very-light-gray);
+}
+
+.sedans a {
+    color: var(--bright-orange);
+}
+.suvs a {
+    color: var(--dark-cyan);
+}
+.luxury a {
+    color: var(--very-dark-cyan);
+}
+
+.attribution {
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media (min-width: 376px) {
+    article {
+        max-width: 335px;
+    }
+}
+
+@media (min-width: 1008px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        font-size: 16px;
+    }
+    .card {
+        display: flex;
+        flex-direction: row;
+    }
+    p {
+        margin-bottom: 100px;
+    }
+    .header-style {
+        font-size: 40px;
+    }
+}
